@@ -68,7 +68,7 @@ export default async function Home() {
                     href={"/attractions/" + attraction?._id}
                     className="border-b-1 hover:border-b-2 hover:border-b-green-500"
                   >
-                    See more
+                    Learn more
                   </Link>
                 </div>
               ))}

@@ -1,6 +1,7 @@
 import { createClient } from "next-sanity";
 import imageUrlBuilder from "@sanity/image-url";
 import Image from "next/image";
+import Link from "next/link";
 
 type Attraction = {
   _id: string;
@@ -67,10 +68,16 @@ export default async function Attraction({ params }: Props) {
           />{" "}
           <p className="pt-5">{attraction.detail}</p>
           <p>
-            <span className="text-blue-500">latitude</span> {attraction.latitude}{" "}
+            <span className="text-blue-500">latitude</span>{" "}
+            {attraction.latitude}{" "}
             <span className="text-red-500">longitude</span>{" "}
             {attraction.longitude}
           </p>
+          <Link
+            href="/"
+          >
+            <button className="w-20 bg-grey-500 rounded-xl p-2 shadow-sm my-2 cursor-pointer hover:text-green-600">Back</button>
+          </Link>
         </div>
       </main>
     </div>
