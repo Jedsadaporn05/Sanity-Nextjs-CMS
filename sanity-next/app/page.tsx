@@ -41,7 +41,7 @@ export default async function Home() {
   // console.log(attractions);
 
   return (
-    <div className="w-full h-full lg:h-screen py-6">
+    <div className="w-full min-h-screen py-6">
       <main className="w-full h-full mx-auto my-6">
         <h1 className="text-3xl font-bold my-6 text-black">Attractions</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
