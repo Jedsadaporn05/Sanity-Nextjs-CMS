@@ -35,6 +35,7 @@ function urlFor(source: Attraction["coverimage"]) {
 }
 
 export default async function Home() {
+  // ** catch
   const attractions: Attraction[] = await client.fetch(
     `*[_type == "attraction"]`
   );
